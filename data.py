@@ -113,7 +113,7 @@ d = getcwd()
 mask = np.array(Image.open("halloween-logo.jpg"))
 
 #create the word cloud object 
-wc= WordCloud(background_color="black", max_words=2000, max_font_size=50, random_state=1, mask=mask, stopwords=STOPWORDS)
+wc= WordCloud(background_color="black", max_words=2000, max_font_size=90, random_state=1, mask=mask, stopwords=STOPWORDS)
 wc.generate(text)
 
 image_colors = ImageColorGenerator(mask)
